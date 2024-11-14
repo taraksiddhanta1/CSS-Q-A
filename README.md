@@ -163,3 +163,54 @@ Here are 50 commonly asked CSS questions and answers that can help you prepare f
 ### 50. **How does `grid-template-areas` work?**
    - **Answer**: `Grid-template-areas` allows naming grid cells to make layouts more understandable.
 
+==================================================================================================================
+Top 10 CSS interview questions and answers focused on CSS Grid and Flexbox, essential layout systems for front-end development:
+==================================================================================================================
+
+
+---
+
+### 1. **What is Flexbox, and when should you use it?**
+   - **Answer**: Flexbox (Flexible Box Layout) is a one-dimensional layout system in CSS used for arranging items in a row or column. It’s ideal for aligning items, distributing space, and creating responsive layouts along a single axis (either horizontal or vertical).
+
+### 2. **What is the difference between `justify-content` and `align-items` in Flexbox?**
+   - **Answer**: In Flexbox, `justify-content` controls the alignment of items along the main axis (horizontal for `row`, vertical for `column`), and `align-items` controls alignment along the cross-axis (vertical for `row`, horizontal for `column`). For example, `justify-content: center;` centers items horizontally, while `align-items: center;` centers items vertically.
+
+### 3. **What does `flex-grow`, `flex-shrink`, and `flex-basis` do?**
+   - **Answer**: 
+     - `flex-grow`: Defines how much a flex item should grow relative to others if there’s extra space.
+     - `flex-shrink`: Specifies how much a flex item should shrink if there’s not enough space.
+     - `flex-basis`: Sets the initial size of a flex item before space is distributed, similar to setting `width` or `height`.
+
+### 4. **What is CSS Grid, and when is it preferable over Flexbox?**
+   - **Answer**: CSS Grid is a two-dimensional layout system for creating complex layouts with rows and columns. Grid is ideal for laying out larger sections of a webpage, especially when both horizontal and vertical alignment are needed. Flexbox, being one-dimensional, is better suited for simpler row or column layouts.
+
+### 5. **Explain the purpose of `grid-template-columns` and `grid-template-rows`.**
+   - **Answer**: 
+     - `grid-template-columns` defines the number and width of columns in a CSS Grid.
+     - `grid-template-rows` sets the number and height of rows. For example, `grid-template-columns: 1fr 2fr;` creates two columns with the second being twice as wide as the first.
+
+### 6. **How does `grid-area` work in CSS Grid?**
+   - **Answer**: `grid-area` is used to position grid items within specific grid cells or multiple cells. It can take either a name defined in `grid-template-areas` or a shorthand syntax (`row-start / column-start / row-end / column-end`). This allows items to span multiple rows or columns.
+
+### 7. **How does `align-items` and `justify-items` work in CSS Grid?**
+   - **Answer**: In CSS Grid:
+     - `align-items` aligns items along the block (vertical) axis for all grid items within the container.
+     - `justify-items` aligns items along the inline (horizontal) axis. Each individual grid item can also be aligned using `align-self` and `justify-self`.
+
+### 8. **What does `fr` mean in CSS Grid?**
+   - **Answer**: `fr` (fractional unit) is a flexible length unit used in CSS Grid that represents a fraction of the remaining space in the grid container. For example, `grid-template-columns: 1fr 2fr;` allocates one-third of the space to the first column and two-thirds to the second.
+
+### 9. **How do `order` in Flexbox and `grid-row`/`grid-column` in Grid differ in controlling item positioning?**
+   - **Answer**: 
+     - In Flexbox, the `order` property controls the visual order of flex items along the main axis, without changing the source order in HTML.
+     - In Grid, `grid-row` and `grid-column` specify exact row and column positions for items, offering more control over layout positioning.
+
+### 10. **Explain `gap` in Flexbox and Grid and when to use it.**
+   - **Answer**: The `gap` property defines spacing between flex or grid items:
+     - In Grid, `gap` applies between rows and columns, often as `grid-row-gap` and `grid-column-gap`.
+     - In Flexbox, `gap` applies between flex items, simplifying spacing compared to adding margins between elements.
+
+---
+
+These questions delve into the core properties and concepts that front-end developers frequently encounter when working with CSS Grid and Flexbox.
